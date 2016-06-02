@@ -1,0 +1,38 @@
+{
+  "name": "react-vstyle",
+  "version": "0.1.0",
+  "description": "React bindings for vstyle",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib"
+  },
+  "keywords": [
+    "react",
+    "vstyle",
+    "css",
+    "style",
+    "cssinjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdecampredon/react-vstyle.git"
+  },
+  "author": "François de Campredon <francois.de.campredon@gmail.com> (https://github.com/fdecampredon)",
+  "bugs": {
+    "url": "https://github.com/fdecampredon/react-vstyle/issues"
+  },
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^15.1.0"
+  },
+  "dependencies": {
+    "object-assign": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1"
+  }
+}

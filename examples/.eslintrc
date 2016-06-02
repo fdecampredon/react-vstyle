@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "no-trailing-spaces": 0,
+    "no-param-reassign": 0,
+    "func-names": 0,
+    "vars-on-top": 0,
+    "react/prop-types": 0
+  }
+}
