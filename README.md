@@ -4,7 +4,7 @@
 
 
 ## Install
-You can install react-vstyle through npm: 
+You can install react-vstyle through npm:
 ```
 npm install react-vstyle
 ```
@@ -13,7 +13,7 @@ npm install react-vstyle
 
 ### StylesRendererProvider
 
-react-vstyle let you inject a VStyle `StylesRenderer` in the react context with the `StylesRendererProvider` component: 
+react-vstyle let you inject a VStyle `StylesRenderer` in the react context with the `StylesRendererProvider` component:
 
 ```javascript
 import React from 'react';
@@ -23,12 +23,13 @@ import { StylesRendererProvider } from 'react-vstyle';
 import MyComponent from './myComponent';
 
 const stylesRenderer = createStylesRenderer();
+stylesRenderer.attach(document.getElementById('style'));
 
 ReactDOM.render(
   <StylesRendererProvider stylesRenderer={stylesRenderer}>
     <MyComponent />
   </StylesRendererProvider>,
-  docuent.getElementById('root')
+  document.getElementById('root')
 );
 ```
 
@@ -57,7 +58,7 @@ function MyComponent({ renderStyles, styles: otherStyles }) {
 export default withRenderStyles(MyComponent)
 ```
 
-## Navive component injection
+## Native component injection
 
 Alternatively you can use the experimental `injectNativeComponent` function of react-vstyle,
 then you can drop your styles in the `styles` (notice the _s_) property of your DOM components:
@@ -72,12 +73,13 @@ import MyComponent from './myComponent';
 injectNativeComponent();
 
 const stylesRenderer = createStylesRenderer();
+stylesRenderer.attach(document.getElementById('style'));
 
 ReactDOM.render(
   <StylesRendererProvider stylesRenderer={stylesRenderer}>
     <MyComponent />
   </StylesRendererProvider>,
-  docuent.getElementById('root')
+  document.getElementById('root')
 );
 ```
 
